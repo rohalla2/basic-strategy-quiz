@@ -1,0 +1,240 @@
+[
+  {
+    "playerHand": "5",
+    "playerAction": {
+      "hit": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "6",
+    "playerAction": {
+      "hit": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "7",
+    "playerAction": {
+      "hit": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "8",
+    "playerAction": {
+      "hit": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "9",
+    "playerAction": {
+      "hit": [2,7,8,9,10,"A"],
+      "doubleHit": [3,4,5,6]
+    }
+  },
+  {
+    "playerHand": "10",
+    "playerAction": {
+      "hit": [10, "A"],
+      "doubleHit": [2,3,4,5,6,7,8,9]
+    }
+  },
+  {
+    "playerHand": "11",
+    "playerAction": {
+      "doubleHit": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "12",
+    "playerAction": {
+      "hit": [2,3,7,8,9,10,"A"],
+      "stay": [4,5,6]
+    }
+  },
+  {
+    "playerHand": "13",
+    "playerAction": {
+      "hit": [7,8,9,10,"A"],
+      "stay": [2,3,4,5,6]
+    }
+  },
+  {
+    "playerHand": "14",
+    "playerAction": {
+      "hit": [7,8,9,10,"A"],
+      "stay": [2,3,4,5,6]
+    }
+  },
+  {
+    "playerHand": "15",
+    "playerAction": {
+      "hit": [7,8,9,10,"A"],
+      "stay": [2,3,4,5,6]
+    }
+  },
+  {
+    "playerHand": "16",
+    "playerAction": {
+      "hit": [7,8,9,10,"A"],
+      "stay": [2,3,4,5,6]
+    }
+  },
+  {
+    "playerHand": "17",
+    "playerAction": {
+      "stay": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "18",
+    "playerAction": {
+      "stay": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "19",
+    "playerAction": {
+      "stay": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "20",
+    "playerAction": {
+      "stay": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "21",
+    "playerAction": {
+      "stay": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "A2",
+    "playerAction": {
+      "hit": [2,3,4,7,8,9,10,"A"],
+      "doubleHit": [5,6]
+    }
+  },
+  {
+    "playerHand": "A3",
+    "playerAction": {
+      "hit": [2,3,4,7,8,9,10,"A"],
+      "doubleHit": [5,6]
+    }
+  },
+  {
+    "playerHand": "A4",
+    "playerAction": {
+      "hit": [2,3,7,8,9,10,"A"],
+      "doubleHit": [4,5,6]
+    }
+  },
+  {
+    "playerHand": "A5",
+    "playerAction": {
+      "hit": [2,3,7,8,9,10,"A"],
+      "doubleHit": [4,5,6]
+    }
+  },
+  {
+    "playerHand": "A6",
+    "playerAction": {
+      "hit": [2,7,8,9,10,"A"],
+      "doubleHit": [3,4,5,6]
+    }
+  },
+  {
+    "playerHand": "A7",
+    "playerAction": {
+      "hit": [9,10,"A"],
+      "stay": [7,8],
+      "doubleStay": [2,3,4,5,6]
+    }
+  },
+  {
+    "playerHand": "A8",
+    "playerAction": {
+      "stay": [2,3,4,5,7,8,9,10,"A"],
+      "doubleStay": [6]
+    }
+  },
+  {
+    "playerHand": "A9",
+    "playerAction": {
+      "stay": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "A10",
+    "playerAction": {
+      "stay": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "22",
+    "playerAction": {
+      "hit": [8,9,10,"A"],
+      "split": [2,3,4,5,6,7]
+    }
+  },
+  {
+    "playerHand": "33",
+    "playerAction": {
+      "hit": [8,9,10,"A"],
+      "split": [2,3,4,5,6,7]
+    }
+  },
+  {
+    "playerHand": "44",
+    "playerAction": {
+      "hit": [2,3,4,7,8,9,10,"A"],
+      "split": [5,6]
+    }
+  },
+  {
+    "playerHand": "55",
+    "playerAction": {
+      "hit": [10,"A"],
+      "doubleHit": [2,3,4,5,6,7,8,9]
+    }
+  },
+  {
+    "playerHand": "66",
+    "playerAction": {
+      "hit": [7,8,9,10,"A"],
+      "split": [2,3,4,5,6]
+    }
+  },
+  {
+    "playerHand": "77",
+    "playerAction": {
+      "hit": [8,9,10,"A"],
+      "split": [2,3,4,5,6,7]
+    }
+  },
+  {
+    "playerHand": "88",
+    "playerAction": {
+      "split": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "99",
+    "playerAction": {
+      "stay": [7,10,"A"],
+      "split": [2,3,4,5,6,8,9]
+    }
+  },
+  {
+    "playerHand": "1010",
+    "playerAction": {
+      "stay": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  },
+  {
+    "playerHand": "AA",
+    "playerAction": {
+      "split": [2,3,4,5,6,7,8,9,10,"A"]
+    }
+  }
+]
