@@ -1,0 +1,39 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">What should you do when your hand is <span id="player-hand"></span>?</h3>
+  </div>
+  <div class="panel-body">
+    <div id="show-answer" class="btn btn-success">Show Answer</div>
+    <div id="next-question" class="btn btn-default">Next Question</div>
+    <div id="answer-panel" class="well"></div>
+    <div id="counter"></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var questions = <%= @questions.to_json %>
+  var currentQuestionNum = 0;
+
+  var displayQuestion = function() {
+    if (currentQuestionNum === questions.length) {
+      alert('All questions completed');
+      return;
+    }
+    $('#player-hand').html(questions[currentQuestionNum].playerHand);
+    $('#counter').html((currentQuestionNum + 1) + '/' + questions.length );
+  };
+
+  $(function() {
+    displayQuestion();
+  });
+
+  $('#next-question').click(function() {
+    $('#answer-panel').contents().remove();
+    currentQuestionNum++;
+    displayQuestion();
+  });
+
+  $('#show-answer').click(function() {
+    $('#answer-panel').html(JSON.stringify(questions[currentQuestionNum].playerAction))
+  });
+</script>
