@@ -30,21 +30,44 @@
     displayQuestion();
   });
 
-  $('#next-question').click(function() {
+  var nextQuestion = function() {
     $('#answer-panel').contents().remove();
     currentQuestionNum++;
     displayQuestion();
-  });
+  };
 
-  $('#previous-question').click(function() {
+  var previousQuestion = function() {
     $('#answer-panel').contents().remove();
     if (currentQuestionNum !== 0) {
       currentQuestionNum--;
     };
     displayQuestion();
+  };
+
+  var showAnswer = function() {
+    $('#answer-panel').html(JSON.stringify(questions[currentQuestionNum].playerAction))
+  };
+
+  $('#next-question').click(function() {
+    nextQuestion();
+  });
+
+  $('#previous-question').click(function() {
+    previousQuestion();
   });
 
   $('#show-answer').click(function() {
-    $('#answer-panel').html(JSON.stringify(questions[currentQuestionNum].playerAction))
+    showAnswer();
+  });
+
+  $("body").keydown(function(e) {
+    if(e.keyCode == 37) { // left
+      previousQuestion();
+    } else if (e.keyCode == 40) {
+      showAnswer();
+    }
+    else if(e.keyCode == 39) { // right
+      nextQuestion();
+    }
   });
 </script>
