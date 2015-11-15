@@ -1,0 +1,10 @@
+#button-container {
+  margin-top: 20px; }
+  #button-container #show-answer {
+    margin-bottom: 20px; }
+  #button-container #next-question, #button-container #previous-question {
+    float: right; }
+  #button-container #next-question {
+    margin-left: 20px; }
+
+/*# sourceMappingURL=quiz.css.map */
