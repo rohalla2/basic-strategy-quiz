@@ -44,8 +44,25 @@
     displayQuestion();
   };
 
+  var parsePlayerAction = function(playerObj) {
+    var html = '<table><tr><th>When dealer shows:</th><th>You should:</th></tr>';
+
+    $.each(playerObj, function(key, value){
+      if (key === 'doubleHit') {
+        key = 'Double if allowed, otherwise Hit'
+      } else if (key === 'doubleStay'){
+        key = 'Double if allowed, otherwise Stay'
+      };
+      html += '<tr><td>' + value.toString() + '</td><td>' + key + '</td></tr>'
+    });
+
+    html += '</table>'
+
+    return html;
+  }
+
   var showAnswer = function() {
-    $('#answer-panel').html(JSON.stringify(questions[currentQuestionNum].playerAction))
+    $('#answer-panel').html(parsePlayerAction(questions[currentQuestionNum].playerAction));
   };
 
   $('#next-question').click(function() {
