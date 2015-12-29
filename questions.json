@@ -127,7 +127,7 @@
   },
   {
     "difficulty": "medium",
-    "playerHand": "A2",
+    "playerHand": "Soft 13",
     "playerAction": {
       "hit": [2,3,4,7,8,9,10,"A"],
       "doubleHit": [5,6]
@@ -135,7 +135,7 @@
   },
   {
     "difficulty": "medium",
-    "playerHand": "A3",
+    "playerHand": "Soft 14",
     "playerAction": {
       "hit": [2,3,4,7,8,9,10,"A"],
       "doubleHit": [5,6]
@@ -143,7 +143,7 @@
   },
   {
     "difficulty": "hard",
-    "playerHand": "A4",
+    "playerHand": "Soft 15",
     "playerAction": {
       "hit": [2,3,7,8,9,10,"A"],
       "doubleHit": [4,5,6]
@@ -151,7 +151,7 @@
   },
   {
     "difficulty": "hard",
-    "playerHand": "A5",
+    "playerHand": "Soft 16",
     "playerAction": {
       "hit": [2,3,7,8,9,10,"A"],
       "doubleHit": [4,5,6]
@@ -159,7 +159,7 @@
   },
   {
     "difficulty": "hard",
-    "playerHand": "A6",
+    "playerHand": "Soft 17",
     "playerAction": {
       "hit": [2,7,8,9,10,"A"],
       "doubleHit": [3,4,5,6]
@@ -167,7 +167,7 @@
   },
   {
     "difficulty": "hard",
-    "playerHand": "A7",
+    "playerHand": "Soft 18",
     "playerAction": {
       "hit": [9,10,"A"],
       "stay": [7,8],
@@ -176,7 +176,7 @@
   },
   {
     "difficulty": "medium",
-    "playerHand": "A8",
+    "playerHand": "Soft 19",
     "playerAction": {
       "stay": [2,3,4,5,7,8,9,10,"A"],
       "doubleStay": [6]
@@ -184,7 +184,7 @@
   },
   {
     "difficulty": "easy",
-    "playerHand": "A9",
+    "playerHand": "Soft 20",
     "playerAction": {
       "stay": [2,3,4,5,6,7,8,9,10,"A"]
     }
