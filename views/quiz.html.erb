@@ -1,90 +1,25 @@
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">What should you do when your hand is <span id="player-hand"></span>?</h3>
-  </div>
-  <div class="panel-body">
-    <div id="counter"></div>
-    <div id="button-container" class="content">
-      <div id="show-answer" class="btn btn-success">Show Answer</div>
-      <div id="next-question" class="btn btn-default">Next Question</div>
-      <div id="previous-question" class="btn btn-default">Previous Question</div>
+<div id="start-content">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">What should you do when your hand is <span id="player-hand"></span>?</h3>
     </div>
-    <div id="answer-panel" class="well"></div>
+    <div class="panel-body">
+      <div id="counter"></div>
+      <div id="button-container" class="content">
+        <div id="show-answer" class="btn btn-success">Show Answer</div>
+        <div id="next-question" class="btn btn-default">Next &gt;</div>
+        <div id="previous-question" class="btn btn-default">&lt; Prev</div>
+      </div>
+      <div id="answer-panel" class="well">
+<!--         <div class="row">
+          <div class="col-xs-6 header">Dealer Shows:</div>
+          <div class="col-xs-6 header">Your action:</div>
+          <div class="col-xs-6">2,3,4,5,6,7,8,9,10,A</div>
+          <div class="col-xs-6">hit</div>
+        </div>
+ -->      </div>
+    </div>
   </div>
 </div>
 
-<script type="text/javascript">
-  var questions = <%= @questions.to_json %>
-  var currentQuestionNum = 0;
-
-  var displayQuestion = function() {
-    if (currentQuestionNum === questions.length) {
-      alert('All questions completed');
-      return;
-    }
-    $('#player-hand').html(questions[currentQuestionNum].playerHand);
-    $('#counter').html((currentQuestionNum + 1) + '/' + questions.length );
-  };
-
-  $(function() {
-    displayQuestion();
-  });
-
-  var nextQuestion = function() {
-    $('#answer-panel').contents().remove();
-    currentQuestionNum++;
-    displayQuestion();
-  };
-
-  var previousQuestion = function() {
-    $('#answer-panel').contents().remove();
-    if (currentQuestionNum !== 0) {
-      currentQuestionNum--;
-    };
-    displayQuestion();
-  };
-
-  var parsePlayerAction = function(playerObj) {
-    var html = '<table><tr><th>When dealer shows:</th><th>You should:</th></tr>';
-
-    $.each(playerObj, function(key, value){
-      if (key === 'doubleHit') {
-        key = 'Double if allowed, otherwise Hit'
-      } else if (key === 'doubleStay'){
-        key = 'Double if allowed, otherwise Stay'
-      };
-      html += '<tr><td>' + value.toString() + '</td><td>' + key + '</td></tr>'
-    });
-
-    html += '</table>'
-
-    return html;
-  }
-
-  var showAnswer = function() {
-    $('#answer-panel').html(parsePlayerAction(questions[currentQuestionNum].playerAction));
-  };
-
-  $('#next-question').click(function() {
-    nextQuestion();
-  });
-
-  $('#previous-question').click(function() {
-    previousQuestion();
-  });
-
-  $('#show-answer').click(function() {
-    showAnswer();
-  });
-
-  $("body").keydown(function(e) {
-    if(e.keyCode == 37) { // left
-      previousQuestion();
-    } else if (e.keyCode == 40) {
-      showAnswer();
-    }
-    else if(e.keyCode == 39) { // right
-      nextQuestion();
-    }
-  });
-</script>
+<script src="script.js"></script>

@@ -16,6 +16,6 @@ get '/' do
 end
 
 get '/start' do
-  @questions = get_randomized_questions
+  # @questions = get_randomized_questions
   erb :quiz
 end
