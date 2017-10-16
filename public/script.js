@@ -1,12 +1,37 @@
 var questions;
 var currentQuestionNum = 0;
+var levelsArray = ['easy', 'medium', 'hard'];
 
 $(document).ready(function() {
   $.getJSON('questions.json', function(response){
+    var difficulties = getDifficulty();
     questions = shuffle(response);
+
+    $.each(levelsArray, function(i, diff) {
+      if (!difficulties.includes(diff)) {
+        questions = _.reject(questions, function(q) {
+          return q.difficulty === diff;
+        });
+      }
+    });
+
     displayQuestion();
   })
 });
+
+function getDifficulty()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        if (levelsArray.includes(hash[0])) {
+          vars.push(hash[0]);
+        }
+    }
+    return vars;
+}
 
 function displayQuestion(direction) {
   $('#answer-panel').contents().remove();
