@@ -1,6 +1,7 @@
 # Blackjack Basic Strategy Quiz
 ## Requirements
-Shotgun: `gem install shotgun`
+* Sinatra: `gem install sinatra`
+* Shotgun: `gem install shotgun`
 
 ## To use in development:
 1. `shotgun quiz.rb`
