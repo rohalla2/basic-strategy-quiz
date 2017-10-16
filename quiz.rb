@@ -15,7 +15,7 @@ get '/' do
   erb :index
 end
 
-get '/start' do
+get '/start.html' do
   # @questions = get_randomized_questions
   erb :quiz
 end
