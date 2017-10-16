@@ -23,6 +23,10 @@ function getDifficulty()
 {
     var vars = [], hash;
     var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    if (hashes.length === 1 && (hashes[0] === "" || hashes[0].includes("start.html"))) {
+      return levelsArray;
+    }
+
     for(var i = 0; i < hashes.length; i++)
     {
         hash = hashes[i].split('=');
